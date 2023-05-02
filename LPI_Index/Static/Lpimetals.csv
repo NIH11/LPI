@@ -1,0 +1,10 @@
+parameter,parameter value,concentration,background
+Total chromium,0.1,5,0.125
+Lead,0.18,5.5,0.123
+Mercury,0.0001,5,0.121
+Arsenic,0.001,5,0.119
+Cyanide,0.05,5,0.114
+Zinc,0.16,5,0.11
+Nickel,0.18,5.5,0.102
+Copper,0.02,5,0.098
+Iron,288,10,0.088

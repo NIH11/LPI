@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block title %}LPI Subindex{% endblock title %}
+
+{% block body %}
+
+  
+  <form method="POST">
+    {% csrf_token %}
+   <html>
+<head>
+    <title>LPI Sub index</title>
+</head>
+<body>
+    <h2>Organic Sub Index Calculator</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="parameter1">Parameter 1:BOD5(mg/l)</label>
+        <input type="text" name="parameter" id="parameter1">
+        <label for="parameter value">Parameter value:</label>
+        <input type="text" name="value" id="parameter value">
+        <br><br>
+        <label for="parameter2">Parameter 2:COD(mg/l)</label>
+        <input type="text" name="parameter" id="parameter2">
+        <label for="parameter value">Parameter value:</label>
+        <input type="text" name="value" id="parameter value">
+        <br><br>
+        <label for="parameter3">Parameter 3:Phenolic compounds</label>
+        <input type="text" name="parameter" id="parameter3">
+        <label for="parameter value">Parameter value:</label>
+        <input type="text" name="value" id="parameter value">
+        <br><br>
+        <label for="parameter4">Parameter 4:Total colifrom bacteria</label>
+        <input type="text" name="parameter" id="parameter4">
+        <label for="parameter value">Parameter value:</label>
+        <input type="text" name="value" id="parameter value">
+        <br><br>
+                <input type="submit" value="Calculate LPI">
+        <label> LPI Organic</label>
+        <input type="text" value= "{{lpiorganic}}"class="form-control">
+    </form>
+</body>
+</html>
+
+ </body>
+</html>
+{% endblock %}

@@ -1,0 +1,5 @@
+parameter,parameter value,concentration,background
+BOD5(mg/l),4400,54,0.263
+COD(mg/l),33700,88,0.267
+Phenolic compounds,4.6,10,0.246
+Total colifrom bacteria,340,60,0.224

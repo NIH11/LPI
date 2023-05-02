@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% block title %}LPI Calculator{% endblock title %}
+
+{% block body %}
+
+  
+  <form method="POST">
+    {% csrf_token %}
+   <html>
+<head>
+    <title>LPI Index</title>
+</head>
+<body>
+    <h2>LPI Index Calculator</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="parameter1">Parameter 1:PH</label>
+        <input type="text" name="parameter" id="parameter1">
+        <label for="parameter value">Parameter value:</label>
+        <input type="text" name="value" id="parameter value">
+        <br><br>
+        <label for="parameter2">Parameter 2:BOD5(mg/l)</label>
+        <input type="text" name="parameter" id="parameter2">
+        <label for="parameter value">Parameter value:</label>
+        <input type="text" name="value" id="parameter value">
+        <br><br>
+        <label for="parameter3">Parameter 3:COD(mg/l)</label>
+        <input type="text" name="parameter" id="parameter3">
+        <label for="parameter value">Parameter value:</label>
+        <input type="text" name="value" id="parameter value">
+        <br><br>
+        <label for="parameter4">Parameter 4:TDS(mg/l)</label>
+        <input type="text" name="parameter" id="parameter4">
+        <label for="parameter value">Parameter value:</label>
+        <input type="text" name="value" id="parameter value">
+        <br><br>
+        <label for="parameter5">Parameter 5:TKN</label>
+        <input type="text" name="parameter" id="parameter5">
+        <label for="parameter value">Parameter value:</label>
+        <input type="text" name="value" id="parameter value">
+        <br><br>
+        <label for="parameter6">Parameter 6:NH3-N</label>
+        <input type="text" name="parameter" id="parameter6">
+        <label for="parameter value">Parameter value:</label>
+        <input type="text" name="value" id="parameter value">
+        <br><br>
+        <label for="parameter7">Parameter 7:Chloride (Cl¯)(mg/l)</label>
+        <input type="text" name="parameter" id="parameter7">
+        <label for="parameter value">Parameter value:</label>
+        <input type="text" name="value" id="parameter value">
+        <br><br>
+        <label for="parameter8">Parameter 8:Fe(mg/l)</label>
+        <input type="text" name="parameter" id="parameter8">
+        <label for="parameter value">Parameter value:</label>
+        <input type="text" name="value" id="parameter value">
+        <br><br>
+        <label for="parameter9">Parameter 9:Cr(mg/l)</label>
+        <input type="text" name="parameter" id="parameter9">
+        <label for="parameter value">Parameter value:</label>
+        <input type="text" name="value" id="parameter value">
+        <br><br>
+        <label for="parameter10">Parameter 10:Cu(mg/L)</label>
+        <input type="text" name="parameter" id="parameter10">
+        <label for="parameter value">Parameter value:</label>
+        <input type="text" name="value" id="parameter value">
+        <br><br>
+        <label for="parameter11">Parameter 11:Ni(mg/l)</label>
+        <input type="text" name="parameter" id="parameter11">
+        <label for="parameter value">Parameter value:</label>
+        <input type="text" name="value" id="parameter value">
+        <br><br>
+        <label for="parameter12">Parameter 12:Pb(mg/l)</label>
+        <input type="text" name="parameter" id="parameter12">
+        <label for="parameter value">Parameter value:</label>
+        <input type="text" name="value" id="parameter value">
+        <br><br>
+        <label for="parameter13">Parameter 13:Zn(mg/l)</label>
+        <input type="text" name="parameter" id="parameter13">
+        <label for="parameter value">Parameter value:</label>
+        <input type="text" name="value" id="parameter value">
+        <br><br>
+        <input type="submit" value="Calculate LPI">
+        <label> LPI Index</label>
+        <input type="text" value= "{{lpi}}"class="form-control">
+    </form>
+</body>
+</html>
+
+ </body>
+</html>
+{% endblock %}
